@@ -20,7 +20,7 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 node("master"){
 
-  def String giturl = "git@github.com:ten-peb/docker-ubuntu-rabbitmq.git'
+  def String giturl = "git@github.com:ten-peb/docker-ubuntu-rabbitmq.git"
   def String clone2 = 'docker-rabbitmq'
   def String image_base_tag = "ubuntu-rabbitmq" 
   def String image_version_tag = "0.5.0"
