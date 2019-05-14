@@ -35,8 +35,8 @@ node("master"){
       def String image_tag = image_base_tag + ':' + image_version_tag;
       doDockerBuild(image_tag)
 
-      doDockerBuild(image_base_tag + ':latest',
-      }		 
+      doDockerBuild(image_base_tag + ':latest')
+    }		 
   }
   // Brag about it.
   stage("Send Notification of Success"){
