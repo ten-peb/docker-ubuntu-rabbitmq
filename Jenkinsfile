@@ -3,8 +3,6 @@
 // Jenkinsfile defining a mini pipeline to build and stage a Docker image
 // containing the following:
 //    RabbitMQ
-//    Puppet Agent
-//    Nagios NRPE server
 //
 // Author
 //     Peter L. Berghold <pberghold@tenna.com>
@@ -21,8 +19,8 @@
 node("master"){
 
   def String giturl = "git@github.com:ten-peb/docker-ubuntu-rabbitmq.git"
-  def String clone2 = 'docker-rabbitmq'
-  def String image_base_tag = "ubuntu-rabbitmq" 
+  def String clone2 = 'ubuntu-rabbitmq'
+  def String image_base_tag = "tenna/rabbitmq" 
   def String image_version_tag = "0.5.0"
 
   // Grab the latest version from GitHub to "clone2" subdirectory to work on
